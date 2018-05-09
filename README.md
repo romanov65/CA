@@ -1,5 +1,5 @@
 # CA
 ENG
-The project was created within the framework of the diploma. 
+The project was created within the diploma "accounting of computers technology".
 RU
-Проект был создан в рамках дипломной работы.
+Проект создан в рамках диплома "учет вычислительной техники".

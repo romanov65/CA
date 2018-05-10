@@ -22,7 +22,7 @@ namespace CA
             {
                 панельАдминистратораToolStripMenuItem.Visible = true;
             }
-            //Запрос и подключение к БД
+            /*Запрос и подключение к БД
             var select = "SELECT Логин AS ыва FROM Пользователи";
 
             SqlConnection con = new SqlConnection(@"Data Source=ROMANOV;Initial Catalog=CompTech;Integrated Security=True");
@@ -32,13 +32,39 @@ namespace CA
             dataAdapter.Fill(ds);
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
-            //
+            */
         }
 
-        private void панельАдминистратораToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ПанельАдминистратораToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AdminPanel adminPanel = new AdminPanel();
             adminPanel.Show();
+        }
+
+        private void ВыходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void КомпьютерBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.компьютерBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.compTechDataSet);
+
+        }
+
+        private void MainWin_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "compTechDataSet.Компьютер". При необходимости она может быть перемещена или удалена.
+            this.компьютерTableAdapter.Fill(this.compTechDataSet.Компьютер);
+
+        }
+
+        private void СписаныеКомпьютерыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WrittenOffTech spis = new WrittenOffTech();
+            spis.Show();
         }
     }
 }

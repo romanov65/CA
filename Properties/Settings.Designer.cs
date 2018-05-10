@@ -42,5 +42,15 @@ namespace CA.Properties {
                 return ((string)(this["CompTechConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ROMANOV\\SQLEXPRESS;Initial Catalog=CompTech;Integrated Security=True")]
+        public string CompTechConnectionString1 {
+            get {
+                return ((string)(this["CompTechConnectionString1"]));
+            }
+        }
     }
 }

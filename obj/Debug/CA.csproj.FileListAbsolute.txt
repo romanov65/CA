@@ -1,4 +1,3 @@
-C:\Users\roman\source\repos\CA\CA\bin\Debug\Auth.accdb
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe.config
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.pdb
@@ -11,3 +10,5 @@ C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.pdb
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.MainWin.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AdminPanel.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Auth.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.WrittenOffTech.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csproj.ResolveComReference.cache

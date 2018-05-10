@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 using System.Data.SqlClient;
 
 namespace CA
@@ -21,7 +20,7 @@ namespace CA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=ROMANOV;Initial Catalog=CompTech;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=ROMANOV\SQLEXPRESS;Initial Catalog=CompTech;Integrated Security=True");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("Select Роль From Пользователи where Логин ='" + textBox1.Text + "' and Пароль ='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             dataAdapter.Fill(dt);

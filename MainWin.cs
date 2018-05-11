@@ -56,6 +56,8 @@ namespace CA
 
         private void MainWin_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "compTechDataSet.Заявление". При необходимости она может быть перемещена или удалена.
+            this.заявлениеTableAdapter.Fill(this.compTechDataSet.Заявление);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "compTechDataSet.Компьютер". При необходимости она может быть перемещена или удалена.
             this.компьютерTableAdapter.Fill(this.compTechDataSet.Компьютер);
 
@@ -65,6 +67,11 @@ namespace CA
         {
             WrittenOffTech spis = new WrittenOffTech();
             spis.Show();
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Программа: Учёт компьютерной техники\n"+"Разработчик: Москаленко Александр\n"+ "2018 ©", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -106,6 +106,7 @@ namespace CA
                     wb.SaveAs(sfd.FileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, true, false, XlSaveAsAccessMode.xlNoChange, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing, Type.Missing);
                     app.Quit();
                     MessageBox.Show("Экспорт данных в Excel успешно выполнен!", "Уведомление",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
                 }
             }
         }

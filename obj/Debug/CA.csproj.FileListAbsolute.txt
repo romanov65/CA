@@ -1,7 +1,6 @@
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe.config
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe
 C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.pdb
-C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csprojResolveAssemblyReference.cache
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Properties.Resources.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csproj.GenerateResource.Cache
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csproj.CoreCompileInputs.cache
@@ -12,3 +11,4 @@ C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AdminPanel.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Auth.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.WrittenOffTech.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csproj.ResolveComReference.cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csprojResolveAssemblyReference.cache

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WrittenOffTech));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -67,12 +68,12 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Инвентарный_номер";
+            this.columnHeader1.Text = "Инвентарный номер";
             this.columnHeader1.Width = 124;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Материнская_плата";
+            this.columnHeader2.Text = "Материнская плата";
             this.columnHeader2.Width = 119;
             // 
             // columnHeader3
@@ -82,7 +83,7 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Оперативная_память";
+            this.columnHeader4.Text = "Оперативная память";
             this.columnHeader4.Width = 125;
             // 
             // columnHeader5
@@ -92,12 +93,12 @@
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Звуковая_карта";
+            this.columnHeader6.Text = "Звуковая карта";
             this.columnHeader6.Width = 86;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Жёсткий_диск";
+            this.columnHeader7.Text = "Жёсткий диск";
             this.columnHeader7.Width = 116;
             // 
             // columnHeader8
@@ -137,6 +138,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Export);
             this.Controls.Add(this.listView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WrittenOffTech";
             this.Text = "Отчёт \"Списанная техника\"";
             this.Shown += new System.EventHandler(this.WrittenOffTech_Shown);

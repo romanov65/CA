@@ -8,7 +8,8 @@ C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.exe
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.pdb
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.MainWin.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AdminPanel.resources
-C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Auth.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.WrittenOffTech.resources
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csproj.ResolveComReference.cache
 C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.csprojResolveAssemblyReference.cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Authorization.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Registration.resources

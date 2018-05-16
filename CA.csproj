@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Computer-Logo-Png-820x820.ico</ApplicationIcon>
+    <ApplicationIcon>Pictures\Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -69,44 +69,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPanel.cs">
+    <Compile Include="Forms\AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPanel.Designer.cs">
+    <Compile Include="Forms\AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Auth.cs">
+    <Compile Include="Forms\Authorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Auth.Designer.cs">
-      <DependentUpon>Auth.cs</DependentUpon>
+    <Compile Include="Forms\Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompTechDataSet.Designer.cs">
+    <Compile Include="DataBase\CompTechDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CompTechDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MainWin.cs">
+    <Compile Include="Forms\MainWin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWin.Designer.cs">
+    <Compile Include="Forms\MainWin.Designer.cs">
       <DependentUpon>MainWin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WrittenOffTech.cs">
+    <Compile Include="Forms\Reports\WrittenOffTech.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WrittenOffTech.Designer.cs">
+    <Compile Include="Forms\Reports\WrittenOffTech.Designer.cs">
       <DependentUpon>WrittenOffTech.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminPanel.resx">
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Auth.resx">
-      <DependentUpon>Auth.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainWin.resx">
+    <EmbeddedResource Include="Forms\MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -118,18 +124,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="WrittenOffTech.resx">
+    <EmbeddedResource Include="Forms\Reports\WrittenOffTech.resx">
       <DependentUpon>WrittenOffTech.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="CompTechDataSet.xsc">
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataBase\CompTechDataSet.xsc">
       <DependentUpon>CompTechDataSet.xsd</DependentUpon>
     </None>
-    <None Include="CompTechDataSet.xsd">
+    <None Include="DataBase\CompTechDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>CompTechDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CompTechDataSet.xss">
+    <None Include="DataBase\CompTechDataSet.xss">
       <DependentUpon>CompTechDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -155,15 +164,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
-      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
-      <VersionMajor>12</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -184,7 +184,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Computer-Logo-Png-820x820.ico" />
+    <Content Include="Pictures\Logo.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -198,5 +198,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

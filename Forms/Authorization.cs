@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace CA
 {
-    public partial class Auth : Form
+    public partial class Authorization : Form
     {
-        public Auth()
+        public Authorization()
         {
             InitializeComponent();
         }
@@ -42,6 +42,12 @@ namespace CA
             {
                 MessageBox.Show("Неправильно введённые имя или пароль");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Registration opreg = new Registration();
+            opreg.Show();
         }
     }
 }

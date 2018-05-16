@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace CA {
+namespace CA.DataBase {
     
     
     /// <summary>
@@ -8145,7 +8145,7 @@ namespace CA {
         }
     }
 }
-namespace CA.CompTechDataSetTableAdapters {
+namespace CA.DataBase.CompTechDataSetTableAdapters {
     
     
     /// <summary>

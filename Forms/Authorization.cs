@@ -8,11 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CA.Forms;
+using BEL;
+using BAL;
 
 namespace CA
 {
     public partial class Authorization : Form
     {
+        public Information info = new Information();
+        public Operations opr = new Operations();
+        public string Роль;
+
+        DataTable dt = new DataTable();
+
         public Authorization()
         {
             InitializeComponent();
@@ -20,31 +29,40 @@ namespace CA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=ROMANOV\SQLEXPRESS;Initial Catalog=CompTech;Integrated Security=True");
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select Роль From Пользователи where Логин ='" + textBox1.Text + "' and Пароль ='" + textBox2.Text + "'", con);
-            DataTable dt = new DataTable();
-            dataAdapter.Fill(dt);
-            if (dt.Rows.Count == 1)
+            info.Логин = textBox1.Text;
+            info.Пароль = textBox2.Text;
+            dt = opr.Логин(info);
+
+            if (dt.Rows.Count > 0)
             {
-                if (textBox1.Text == "" || textBox2.Text == "")
+                Роль = dt.Rows[0][4].ToString().Trim();
+                if (Роль == "Администратор")
                 {
-                    MessageBox.Show("Заполните пустые поля");
-                }
-                else
-                {
-                    string ID = dt.Rows[0][0].ToString();
                     this.Hide();
-                    MainWin ss = new MainWin(dt.Rows[0][0].ToString());
-                    ss.Show();
+                    AdminPanel winAdmin = new AdminPanel();
+                    winAdmin.Show();
+                }
+                else if (Роль == "Пользователь")
+                {
+                    this.Hide();
+                    MainWinUser winUser = new MainWinUser();
+                    winUser.Show();
+                }
+                else if (Роль == "ТехОтдел")
+                {
+                    this.Hide();
+                    MainWinTech winTech = new MainWinTech();
+                    winTech.Show();
                 }
             }
             else
             {
-                MessageBox.Show("Неправильно введённые имя или пароль");
+                MessageBox.Show("Неправильный логин или пароль", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox1.Text = textBox2.Text = "";
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             Registration opreg = new Registration();
             opreg.Show();

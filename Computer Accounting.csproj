@@ -69,6 +69,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddComp.Designer.cs">
+      <DependentUpon>AddComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProg.Designer.cs">
+      <DependentUpon>AddProg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +98,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CompTechDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainWin.cs">
+    <Compile Include="Forms\MainWinTech.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainWin.Designer.cs">
-      <DependentUpon>MainWin.cs</DependentUpon>
+    <Compile Include="Forms\MainWinTech.Designer.cs">
+      <DependentUpon>MainWinTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainWinUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainWinUser.Designer.cs">
+      <DependentUpon>MainWinUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,20 +118,29 @@
     <Compile Include="Forms\Reports\WrittenOffTech.Designer.cs">
       <DependentUpon>WrittenOffTech.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registration.cs">
+    <Compile Include="Forms\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration.Designer.cs">
+    <Compile Include="Forms\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddComp.resx">
+      <DependentUpon>AddComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProg.resx">
+      <DependentUpon>AddProg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Authorization.resx">
       <DependentUpon>Authorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainWin.resx">
-      <DependentUpon>MainWin.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainWinTech.resx">
+      <DependentUpon>MainWinTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainWinUser.resx">
+      <DependentUpon>MainWinUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,11 +150,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Forms\Reports\WrittenOffTech.resx">
       <DependentUpon>WrittenOffTech.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registration.resx">
+    <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataBase\CompTechDataSet.xsc">
@@ -185,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pictures\Logo.ico" />
+    <None Include="Resources\plus-512.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -198,6 +227,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{abe48c67-2b30-4af8-a61c-b8c309172e42}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\BAL.csproj">
+      <Project>{1c47584f-ff6b-4481-bd0c-144551c86a5a}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

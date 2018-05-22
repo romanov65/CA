@@ -1,0 +1,24 @@
+C:\Users\roman\source\repos\CA\CA\obj\Debug\Computer Accounting.csprojResolveAssemblyReference.cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\Computer Accounting.csproj.ResolveComReference.cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AdminPanel.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Authorization.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Forms.MainWinUser.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Properties.Resources.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.WrittenOffTech.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.Registration.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\Computer Accounting.csproj.GenerateResource.Cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\Computer Accounting.csproj.CoreCompileInputs.cache
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.exe
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.pdb
+C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe.config
+C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.exe
+C:\Users\roman\source\repos\CA\CA\bin\Debug\CA.pdb
+C:\Users\roman\source\repos\CA\CA\bin\Debug\BEL.dll
+C:\Users\roman\source\repos\CA\CA\bin\Debug\ClassLibrary1.dll
+C:\Users\roman\source\repos\CA\CA\bin\Debug\DAL.dll
+C:\Users\roman\source\repos\CA\CA\bin\Debug\BEL.pdb
+C:\Users\roman\source\repos\CA\CA\bin\Debug\ClassLibrary1.pdb
+C:\Users\roman\source\repos\CA\CA\bin\Debug\DAL.pdb
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.MainWinTech.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AddComp.resources
+C:\Users\roman\source\repos\CA\CA\obj\Debug\CA.AddProg.resources

@@ -71,7 +71,6 @@ namespace CA
             }
             else
             {
-                    
                     SqlCommand cmd = new SqlCommand("INSERT INTO Пользователи(Логин, Пароль, Роль) VALUES(@Логин, @Пароль, @Роль)", con);
                     cmd.Parameters.AddWithValue("@Логин", textBox1.Text);
                     cmd.Parameters.AddWithValue("@Пароль", textBox2.Text);

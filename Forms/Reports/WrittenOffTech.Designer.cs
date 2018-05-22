@@ -61,7 +61,7 @@
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(707, 492);
+            this.listView1.Size = new System.Drawing.Size(823, 492);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -108,7 +108,7 @@
             // 
             // Export
             // 
-            this.Export.Location = new System.Drawing.Point(596, 498);
+            this.Export.Location = new System.Drawing.Point(712, 498);
             this.Export.Name = "Export";
             this.Export.Size = new System.Drawing.Size(99, 23);
             this.Export.TabIndex = 1;
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 533);
+            this.ClientSize = new System.Drawing.Size(823, 527);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Export);
             this.Controls.Add(this.listView1);
